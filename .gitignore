@@ -1,0 +1,4 @@
+__pycache__
+/ssh/*
+!ssh/config
+docker-compose.yml
