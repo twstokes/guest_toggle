@@ -9,7 +9,7 @@ This puts toggling any interface on the router behind an HTTP endpoint. Since an
 
 ## Getting started
 
-1. Install [Asuswrt-Merlin](https://asuswrt.lostrealm.ca/) on your Asus router
+1. Install [Asuswrt-Merlin](https://asuswrt.lostrealm.ca/) on your ASUS router
 2. Create a guest network and disable intranet access
 3. Enable SSH access in Administration
 4. Generate a passwordless SSH keypair  
@@ -67,7 +67,7 @@ In these examples we'll assume Docker is locally running the examples from above
 - Getting the state: `curl localhost:8000/state`
 
   
-####Verification:
+#### Verification:
 
 SSHing into the router and running `ifconfig` will show whether the interface is enabled (visible in the list), or disabled (not visible in the list). You can also check the state of `/sys/class/net/[interface name]/flags`.
 
