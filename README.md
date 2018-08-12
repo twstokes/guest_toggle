@@ -66,6 +66,7 @@ In these examples we'll assume Docker is locally running the examples from above
 - Disabling the interface: `curl localhost:8000/disable`  
 - Getting the state: `curl localhost:8000/state`
 
+Each call will return a message on whether it was a success or failure.
   
 #### Verification:
 
