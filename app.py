@@ -21,10 +21,12 @@ def state():
     status_code = process.stdout.decode('utf-8').strip()
 
     if status_code == '0x1303':
-        return "ENABLED"
+        # enabled
+        return "1"
 
     if status_code == '0x1302':
-        return "DISABLED"
+        # disabled
+        return "0"
 
     return "UNEXPECTED STATUS CODE: {}".format(status_code)
 
